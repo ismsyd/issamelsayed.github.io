@@ -1,165 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <script src="config.js"></script>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-  <meta name="description" content="Issam ElSayed - Computer Engineering student at Beirut Arab University. Portfolio showcasing projects, skills, and engineering passion.">
-  <title>Issam ElSayed | Computer Engineering Portfolio</title>
-  <!-- Google Fonts: Inter for modern readability and elegance -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
-  <!-- Font Awesome 6 (free icons) -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <!-- External CSS -->
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="style.css" rel="stylesheet">
+
+    <title>Issam El Sayed | Portfolio</title>
 </head>
+<script src="script.js"></script>
 <body>
 
-<nav class="navbar">
-  <div class="container nav-container">
-    <div class="logo">
-      <i class="fas fa-microchip"></i> Issam ElSayed
-    </div> 
-        <ul class="nav-links">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-  </div>
-</nav>
+    <!-- Navigation -->
+    <nav>
+        <h2>Issam El Sayed</h2>
 
-<main>
-  <!-- Hero section -->
-  <section id="home" class="hero container">
-    <div class="hero-content">
-      <span class="hero-badge"><i class="fas fa-graduation-cap"></i> BAU • Class of 2029 </span>
-      <h1>Issam ElSayed <br><span class="hero-highlight">Computer Engineering</span> Student</h1>
-      <p>Second-year innovator at Beirut Arab University. Bridging hardware and software with creative code and engineering mindset.</p>
-      <div class="btn-group">
-        <a href="#projects" class="btn btn-primary"><i class="fas fa-arrow-down"></i> Explore My Work</a>
-        <a href="#contact" class="btn btn-outline"><i class="fas fa-paper-plane"></i> Get in touch</a>
-      </div>
-    </div>
-    <div class="hero-illustration">
-      <i class="fas fa-laptop-code"></i>
-    </div>
-  </section>
-
-  <!-- About + education & skills -->
-  <section id="about" class="section">
-    <div class="container">
-      <h2 class="section-title">About me</h2>
-      <div class="about-grid">
-        <div class="about-text">
-          <p>Hello! I'm <strong>Issam ElSayed</strong>, a second-year Computer Engineering student at <strong>Beirut Arab University</strong> (BAU). Passionate about embedded systems, full-stack development, and algorithmic problem-solving, I love turning complex challenges into elegant digital solutions.</p>
-          <p>My academic journey is fueled by curiosity — from debugging mid-level C code to designing interactive web interfaces. I believe engineering is not just about equations, but about crafting meaningful experiences that impact people.</p>
-          <p>Outside the classroom, I enjoy contributing to open-source projects, participating in hackathons, and exploring the latest in AI and IoT. I'm currently seeking internship opportunities to sharpen my skills in a real-world environment.</p>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact</a>
+            
         </div>
-        <div class="info-card">
-          <div class="info-item">
-            <div class="info-icon"><i class="fas fa-university"></i></div>
-            <div><strong>Beirut Arab University</strong><br>B.E. Computer Engineering| Expected Graduation 2029 |Completed 2nd Year | GPA: 3.59/4.0</div>
-          </div>
-          <div class="info-item">
-            <div class="info-icon"><i class="fas fa-calendar-alt"></i></div>
-            <div><strong>Expected Graduation</strong><br>2029</div>
-          </div>
-          <div class="info-item">
-            <div class="info-icon"><i class="fas fa-globe"></i></div>
-            <div><strong>Languages</strong><br>English (Strong), Arabic (native), French (Average)</div>
-          </div>
+        <button id="theme-toggle">🌙 Dark Mode</button>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <div class="hero-text">
+            <p class="small-title">COMPUTER ENGINEERING STUDENT</p>
+
+            <h1>Hello, I'm <span>Issam El Sayed</span></h1>
+
+            <p>
+                I am a 3rd year Computer Engineering student at
+                Beirut Arab University with a passion for programming,
+                hardware, and building practical technological solutions.
+            </p>
+
+            <a class="button" href="#projects">View My Projects</a>
         </div>
-      </div>
-      
-      <div style="margin-top: 3rem;">
-        <h3 style="font-weight: 700; margin-bottom: 1rem;"><i class="fas fa-code"></i> Tech Toolbox & Skills</h3>
-        <div class="skills-grid" id="skillsContainer">
-          <!-- skills injected via JS -->
+
+        <div class="hero-image">
+            <!-- Replace this with your image -->
+            <img id="issam_image" src="images/issam.jpg" alt="Issam El Sayed">
         </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- projects section -->
-  <section id="projects" class="section section-projects">
-    <div class="container">
-      <h2 class="section-title">Featured projects</h2>
-      <div class="projects-grid" id="projectsGrid">
-        <!-- dynamic projects via js -->
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Experience section -->
-<section id="experience" class="section">
-  <div class="container">
-    <h2 class="section-title">Work Experience</h2>
-    <div style="background: white; border-radius: 32px; padding: 2rem; box-shadow: 0 20px 35px -12px rgba(0,0,0,0.08);">
-      <h3 style="color: #2b7a62; margin-bottom: 0.25rem;">Summer Camp Coach Helper</h3>
-      <p style="color: #6c8db0; margin-bottom: 1rem;"><i class="fas fa-calendar-alt"></i> 6 weeks, 2023</p>
-      <ul style="margin-left: 1.5rem; color: #2b4f6a; line-height: 1.7;">
-        <li>Assisted head coach in leading daily activities and supervising campers</li>
-        <li>Supported practice setups and helped demonstrate exercises under coach's guidance</li>
-        <li>Helped track attendance and ensure safety protocols were followed</li>
-      </ul>
-      <p style="margin-top: 1rem; font-size: 0.85rem; color: #7c9ab8;"><i class="fas fa-info-circle"></i> Support role assisting lead coach — no independent coaching responsibilities</p>
-    </div>
-  </div>
-</section>
 
-  <!-- contact section -->
-  <section id="contact" class="section">
-    <div class="container">
-      <h2 class="section-title">Let's connect</h2>
-      <div class="contact-flex">
-        <div class="contact-info">
-          <p style="font-size: 1.2rem; margin-bottom: 1.5rem;">Feel free to reach out for collaboration, mentorship, or just a tech chat!</p>
-          <div class="info-item">
-            <div class="info-icon"><i class="fas fa-envelope"></i></div>
-            <div><strong>Email</strong><br>sayedissam3@gmail.com</div>
-          </div>
-          <div class="info-item">
-            <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
-            <div><strong>Location</strong><br>Tripoli, Lebanon</div>
-          </div>
-          <div style="margin: 1.5rem 0;">
-            <a href="https://ismsyd.github.io/issamelsayed.github.io/resume.pdf" target="_blank"  class="btn btn-primary" style="background: #2a6b58; display: inline-flex; align-items: center; gap: 10px; padding: 12px 24px; border-radius: 40px; text-decoration: none; color: white; font-weight: 600; margin: 10px 0;">
-              <i class="fas fa-download"></i> My Resume (PDF)
+    <!-- About Me -->
+    <section id="about" class="section">
+
+        <h2>About Me</h2>
+
+        <p class="paragraphs">
+            Hello, my name is Issam El Sayed. I am a 3rd year
+            Computer Engineering student at Beirut Arab University.
+            I enjoy learning how software and hardware work together
+            and using programming to solve real-world problems.
+        </p>
+
+        <p class="paragraphs">
+            I am proficient in Java, C, C++, Python, HTML and CSS.
+            I also have experience with Arduino and a strong foundation
+            in computer hardware and components.
+        </p>
+
+        <p class="paragraphs">
+            My goal is to continue developing my technical skills by
+            working on practical projects and exploring different areas
+            of computer engineering.
+        </p>
+
+    </section>
+
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+
+        <h2>My Skills</h2>
+
+        <div class="skills-container">
+
+            <div class="skill">
+                <h3>Programming</h3>
+                <p>C</p>
+                <p>C++</p>
+                <p>Java</p>
+                <p>Python</p>
+            </div>
+
+            <div class="skill">
+                <h3>Web Development</h3>
+                <p>HTML</p>
+                <p>CSS</p>
+            </div>
+
+            <div class="skill">
+                <h3>Hardware</h3>
+                <p>Arduino</p>
+                <p>Computer Components</p>
+                <p>Basic Electronics</p>
+            </div>
+
+            <div class="skill">
+                <h3>Other</h3>
+                <p>Linux</p>
+                <p>Problem Solving</p>
+                <p>Computer Engineering</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+
+        <h2>My Projects</h2>
+
+        <div class="projects-container">
+
+            <div class="project">
+                <h3>Municipality Officer Mission App</h3>
+
+                <p>
+                    A project focused on helping municipality officers
+                    manage and organize missions more efficiently.
+                    The application combines software development with
+                    practical problem solving for a real-world use case.
+                </p>
+
+                <p class="technologies">
+                    Technologies: Programming, Android, Databases
+                </p>
+            </div>
+
+
+            <div class="project">
+                <h3>Arduino Projects</h3>
+
+                <p>
+                    I have worked with Arduino and hardware components,
+                    developing projects that combine programming with
+                    physical electronics.
+                </p>
+
+                <p class="technologies">
+                    Technologies: Arduino, C/C++, Electronics
+                </p>
+            </div>
+
+
+            <div class="project">
+                <h3>Web Development</h3>
+
+                <p>
+                    I have developed websites using HTML and CSS,
+                    focusing on creating clean layouts and simple,
+                    user-friendly interfaces.
+                </p>
+
+                <p class="technologies">
+                    Technologies: HTML, CSS
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Education -->
+    <section id="education" class="section">
+
+        <h2>Education</h2>
+
+        <div class="education-box">
+
+            <h3>Beirut Arab University</h3>
+
+            <p>
+                Bachelor of Engineering
+            </p>
+
+            <p>
+                Computer Engineering
+            </p>
+
+            <p>
+                3rd Year Student
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Contact -->
+    <section id="contact" class="section contact">
+
+        <h2>Let's Connect</h2>
+
+        <p>
+            I am always interested in learning, building new projects,
+            and connecting with people in the field of technology.
+        </p>
+
+        <p>
+            Email:
+            <a href="mailto:sayedissam3@gmail.com">
+                sayedissam3@gmail.com
             </a>
-          </div>
-          <div class="social-links">
-            <a href="https://github.com/ismsyd" target="_blank" class="social-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/issam-el-sayed-37978a33b/" target="_blank" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-            <a href="https://x.com/IssamS73889" target="_blank" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.instagram.com/issam.sayed18/" target="_blank" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-        </div>
-        </div>
-        <div style="flex:1; min-width: 200px;">
-          <div style="background: white; border-radius: 32px; padding: 1.5rem;">
-            <h3><i class="fas fa-paper-plane"></i> Send a note</h3>
-            <form id="contactForm">
-              <input type="text" id="userName" placeholder="Your name" style="width:100%; margin: 0.8rem 0; padding:12px; border-radius:60px; border:1px solid #cfdfed; background:#fff;" required>
-              <input type="email" id="userEmail" placeholder="Email address" style="width:100%; margin: 0.8rem 0; padding:12px; border-radius:60px; border:1px solid #cfdfed;" required>
-              <textarea id="userMessage" rows="3" placeholder="Message..." style="width:100%; margin: 0.8rem 0; padding:12px; border-radius:28px; border:1px solid #cfdfed;" required></textarea>
-              <button type="submit" class="btn btn-primary" id="submitBtn" style="width:100%; justify-content: center;"><i class="fas fa-paper-plane"></i> Send message</button>
-            </form>
-            <p id="formFeedback" style="margin-top: 12px; font-size:0.85rem; text-align:center;"></p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-</main>
+        </p>
 
-<footer>
-  <p>© 2026 Issam ElSayed — Computer Engineering, Beirut Arab University. Built with <i class="fas fa-heart" style="color:#ed7a6e;"></i> and modern web animations.</p>
-</footer>
-<!-- Dark mode toggle button -->
-<button class="dark-mode-toggle" id="darkModeToggle" aria-label="Dark mode">
-  🌙
-</button>
+        <p>
+            GitHub:
+            <a href="https://github.com/ismsyd/" target="_blank">
+                github.com/ismsyd
+            </a>
+        </p>
+
+        <p>
+            LinkedIn:
+            <a href="https://linkedin.com/in/issam-elsayed-37978a33b" target="_blank">
+                linkedin.com/in/issam-elsayed-37978a33b
+            </a>
+        </p>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Issam El Sayed. All rights reserved.</p>
+    </footer>
+
 </body>
 </html>
